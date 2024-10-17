@@ -1,0 +1,176 @@
+/* Reset and basic styling */
+/* Reset and basic styling */
+/* Reset and basic styling */
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(221, 150, 20, 0.2), rgba(0, 0, 0, 0.6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Orange box */
+#orange-box {
+    background-color: rgb(208, 123, 13);
+    width: 700px; /* Match the form width */
+    height: 900px;
+    left: 15%;
+    position: absolute;
+    top: 10%;
+    /* transform: translateY(-50%); */
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Form styling */
+.form-container {
+    background: rgba(17, 17, 17, 0.2); /* Transparency */
+    border-radius: 15px;
+    padding: 30px;
+    width: 500px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Glass shadow */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(17, 16, 16, 0.18); /* Border to simulate depth */
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    transform: translate(-50%, -50%); /* Center the form */
+    z-index: 2; /* Higher z-index to appear above the orange box */
+    max-height: 80vh; /* Set maximum height for the form */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Scrollbar styling (optional for better aesthetics) */
+.form-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.form-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.form-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(7, 7, 7);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.896); /* Transparent input field */
+    color: #000; /* Set text color for better visibility */
+    font-size: 16px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    backdrop-filter: blur(10px); /* Input blur */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+input[type="submit"] {
+    background-color: rgba(226, 169, 55, 0.4);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Slightly lighter on hover */
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(13, 13, 13, 0.5);
+}
+
+/* Business image styling */
+#business-image {
+    width: 200px; /* Set a fixed width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    position: absolute;
+    top: 10%; /* Position the image relative to the orange box */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Ensure the image is perfectly centered */
+    z-index: 2; /* Make sure the image is above the orange box */
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.radio-option {
+    display: flex;              /* Align items horizontally */
+    align-items: center;         /* Vertically center the radio button with the label */
+    margin-bottom: 10px;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 10px;          /* Space between the radio button and the label */
+}
+
+/* Optional: Style the label to have more space or different styling */
+.radio-option label {
+    font-size: 16px;             /* Adjust font size if needed */
+    color: #faf5f5;                 /* Customize text color */
+}
+
+.header-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.logo {
+    width: 100px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between the logo and text */
+}
+
+h2 {
+    font-size: 2rem; /* Adjust font size as needed */
+    color: white; /* Change text color if necessary */
+    margin: 0; /* Remove default margin */
+}
+
